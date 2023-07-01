@@ -24,9 +24,9 @@
 
 // export default NavBar;
 
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
+// import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -39,7 +39,14 @@ function NavBar() {
       {['md'].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+            <Navbar.Brand href="#">
+              <img
+              alt=""
+              src={'RFlogo.png'}
+              width="60"
+              height="60"
+              className="d-inline-block align-top"
+            />{' '}</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -48,7 +55,13 @@ function NavBar() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                <img
+              alt=""
+              src={'RFlogo.png'}
+              width="60"
+              height="60"
+              className="d-inline-block align-top"
+            />{' '}
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -63,14 +76,17 @@ function NavBar() {
                       Escritorios
                     </NavDropdown.Item>
                     {/* <NavDropdown.Divider /> */}
-                    <NavDropdown.Item href="#sillas">
-                      Sillas
+                    <NavDropdown.Item href="#estanterias">
+                      Estanterias
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#percheros">
+                      Percheros
                     </NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href="#contacto">Contacto</Nav.Link>
                   <Nav.Link href="#cartwidget"><CartWidget/></Nav.Link>
                 </Nav>
-
+                
                 {/* <Form className="d-flex">
                   <Form.Control
                     type="search"
@@ -78,7 +94,7 @@ function NavBar() {
                     className="me-2"
                     aria-label="Search"
                   />
-                  <Button variant="outline-success">Search</Button>
+                  <Button variant="outline-success">Search</Button>}
                 </Form> */}
               </Offcanvas.Body>
             </Navbar.Offcanvas>
