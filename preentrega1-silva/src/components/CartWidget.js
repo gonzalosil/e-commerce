@@ -4,7 +4,7 @@ import { useState } from "react";
 
 const CartWidget = () => {
 
-    const [counter, setCounter] = useState(0);
+    const [counter, setCounter] = useState(2);
 
     return (
         <div class="flex-container">
