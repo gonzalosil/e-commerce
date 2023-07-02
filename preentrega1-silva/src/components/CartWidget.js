@@ -4,13 +4,15 @@ import { useState } from "react";
 
 const CartWidget = () => {
 
-    const [counter, setCounter] = useState(2);
+    const [counter, setCounter] = useState(12);
 
     return (
         <div class="flex-container">
             <img src={'shopping_cart.png'} alt="cartwidget" width="25"
               height="25"/>
-              <p>{counter}</p>
+              <div class="circle-counter">
+                  <p>{counter}</p>
+              </div>
         </div>
     )
 }
