@@ -7,10 +7,10 @@ const CartWidget = () => {
     const [counter, setCounter] = useState(12);
 
     return (
-        <div class="flex-container">
-            <img src={'shopping_cart.png'} alt="cartwidget" width="25"
+        <div className="flex-container">
+            <img src={'/images/shopping_cart.png'} alt="cartwidget" width="25"
               height="25"/>
-              <div class="circle-counter">
+              <div className="circle-counter">
                   <p>{counter}</p>
               </div>
         </div>

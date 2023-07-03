@@ -16,7 +16,7 @@ function NavBar() {
             <Navbar.Brand href="#">
               <img
               alt=""
-              src={'RFlogo.png'}
+              src={'/images/RFlogo.png'}
               width="60"
               height="60"
               className="d-inline-block align-top"
