@@ -40,7 +40,7 @@ function NavBar() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="flex-grow-1 pe-3">
-                  <Nav.Link href="#inicio" style={{ fontSize: '1.15em' }}>Inicio</Nav.Link>
+                  {/* <Nav.Link href="#inicio" style={{ fontSize: '1.15em' }}>Inicio</Nav.Link> */}
                   <Nav.Link href="#espejos" style={{ fontSize: '1.15em' }}>Espejos</Nav.Link>
                   <Nav.Link href="#escritorios" style={{ fontSize: '1.15em' }}>Escritorios</Nav.Link>
                   {/* <NavDropdown.Divider /> */}
