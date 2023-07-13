@@ -14,13 +14,7 @@ function NavBar() {
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
             <Navbar.Brand href="#">
-              <img
-              alt=""
-              src={'/images/RFlogo.png'}
-              width="60"
-              height="60"
-              className="d-inline-block align-top"
-            />{' '}</Navbar.Brand>
+              <img alt="" src={'/images/RFlogo.png'} width="60" height="60" className="d-inline-block align-top"/>{' '}</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -62,3 +56,22 @@ function NavBar() {
 }
 
 export default NavBar;
+
+
+// import {Link, NavLink} from 'react-router-dom';
+
+
+// const Navbar = () => {
+//   return (
+//     <nav className="navbar">
+//      <div className='navbar_logo'><Logo/></div>
+//      <Link to='/' className='btn-btn-success'>Home</Link>
+//      <Link to='/pc' className='btn-btn-success'>Computadoras</Link>
+//      <Link to='/celulares' className='btn-btn-success'>Celulares</Link>
+//      <NavLink to='/otros' className='btn-btn-success'>Otros</NavLink>
+//      <Link to='/cart' className='btn-btn-success'><CartWidget/></Link>
+//     </nav>
+//   );
+// };
+
+// export default Navbar;
