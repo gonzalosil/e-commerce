@@ -7,19 +7,19 @@ import {Link, NavLink} from 'react-router-dom';
 
 function NavBar() {
   return (
-    <Navbar className="bg-body-tertiary mb-3">
+    <Navbar>
       <NavLink to='/'>
         <img alt="" src={'/images/RFlogo.png'} width="60" height="60" className="d-inline-block align-top"/>{' '}
       </NavLink>
       <Nav className="">
-        <Link to='/espejos' style={{ fontSize: '1.15em' }}>Espejos</Link>
-        <NavLink to='/escritorios' style={{ fontSize: '1.15em' }}>Escritorios</NavLink>
-        <NavLink to='/estanterias' style={{ fontSize: '1.15em' }}>Estanterias</NavLink>
-        <NavLink to='/percheros' style={{ fontSize: '1.15em' }}>Percheros</NavLink>
-        <NavLink to='/contacto' style={{ fontSize: '1.15em' }}>Contacto</NavLink>
+        <Link to='/category/espejos' style={{ fontSize: '1.15em' }}>Espejos</Link>
+        <NavLink to='/category/escritorios' style={{ fontSize: '1.15em' }}>Escritorios</NavLink>
+        <NavLink to='/category/estanterias' style={{ fontSize: '1.15em' }}>Estanterias</NavLink>
+        <NavLink to='/category/percheros' style={{ fontSize: '1.15em' }}>Percheros</NavLink>
+        <NavLink to='/category/contacto' style={{ fontSize: '1.15em' }}>Contacto</NavLink>
       </Nav>
       <Nav className="justify-content-end flex-grow-1 pe-3">
-        <NavLink to='/cartwidget'><CartWidget/></NavLink>
+        <NavLink to='/category/cartwidget'><CartWidget/></NavLink>
       </Nav>
     </Navbar>
   )

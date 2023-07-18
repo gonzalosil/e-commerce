@@ -12,8 +12,8 @@ function App() {
         <Routes>
           
         </Routes>
-        <ItemList/>
-        <ItemListContainer greeting = "Productos"/>
+        {/* <ItemList/> */}
+        <ItemListContainer/>
       </BrowserRouter>
     </div>
   );
