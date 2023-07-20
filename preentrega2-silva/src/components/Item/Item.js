@@ -1,34 +1,42 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import './Item.css'
 import { Link } from 'react-router-dom';
+import Card from 'react-bootstrap/Card';
+
 
 const Items = ({item}) => {
     return (
-        <Link to = {"/Item/" + item.id} className='text-decoration-noe'>
-            <div className='container'>
-                <div className='card border border-0'>
-                    <img src = {item.imagen} className='card-img-top' alt = {item.nombre}/>
-                    <div className='card-body text-center'>
-                        <p className='card-text'>{item.nombre}</p>
-                    </div>
-                </div>
-            </div>
+        <div>
+        <Link className = 'product_card' to = {"/Item/" + item.id}>
+            <Card className="text-center">
+            <Card.Img variant="top" src={item.img} className='img-fluid' />
+            <Card.Body>
+                <Card.Title>{item.name}</Card.Title>
+            </Card.Body>
+            </Card>
         </Link>
-        // <div className='item'>
-        //     {/* <Card style={{ width: '18rem' }}>
-        //         <Card.Img variant="top" src={props.img} />
-        //         <Card.Body>
-        //         <Card.Title>{props.type}</Card.Title>
-        //         <Card.Text>
-        //             {props.material}
-        //         </Card.Text>
-        //         <Button variant="primary">Mas informacion</Button>
-        //         </Card.Body> */}
-        //     </Card>
-        // </div>
+        </div>
     );
 }
 
 export default Items
+
+
+
+// function ImgOverlayExample() {
+//   return (
+//     <Card className="bg-dark text-white">
+//       <Card.Img src="holder.js/100px270" alt="Card image" />
+//       <Card.ImgOverlay>
+//         <Card.Title>Card title</Card.Title>
+//         <Card.Text>
+//           This is a wider card with supporting text below as a natural lead-in
+//           to additional content. This content is a little bit longer.
+//         </Card.Text>
+//         <Card.Text>Last updated 3 mins ago</Card.Text>
+//       </Card.ImgOverlay>
+//     </Card>
+//   );
+// }
+
+// export default ImgOverlayExample;

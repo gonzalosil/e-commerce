@@ -11,8 +11,8 @@ const ItemListContainer = () => {
     useEffect(()=>{
         const promesa = new Promise((resolve)=>{
             setTimeout(()=>{
-                resolve(id ? arrayProductos.filter(item => item.categoria === id) : arrayProductos)
-            }, 3000);
+                resolve(id ? arrayProductos.filter(item => item.category === id) : arrayProductos)
+            }, 1000);
         });
         promesa.then((data) =>{
             setItem(data)

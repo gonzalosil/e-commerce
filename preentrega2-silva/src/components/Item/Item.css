@@ -1,6 +1,10 @@
-.item {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
+.card-img-top{
+  width: 500px;
+  height: 600px;
+}
+
+.text-center{
+  margin-top: 20px;
+  width: 500px;
+  margin-left: 1%;
+}
